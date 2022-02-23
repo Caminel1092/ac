@@ -4,26 +4,64 @@
   },
   "footer-layout.desktop": {
     "children": [
+      "flex-layout.row#footer1",
       "flex-layout.row#footer-1-desktop",
-      "flex-layout.row#footer-2-desktop",
-      "flex-layout.row#footer-3-desktop"
+      "social-networks",
+      "rich-text#terms"
     ]
   },
+  "rich-text#terms":{
+    "props": {
+      "text": "TÉRMINOS Y CONDICIONES | LÍNEA NACIONAL: 01 8000 180120 - BOGOTÁ: PBX 743 88 00 - HORARIO DE ATENCIÓN: LUN-VIE 8:00 A.M A 5:00 PM | NOTIFICACIONES: AVENIDA BOYACÁ # 152 B - 62, BOGOTÁ, COLOMBIA \n\nCONTACTENOS@ARTUROCALLE.COM | RAZÓN SOCIAL: COMERCIALIZADORA ARTURO CALLE S.A.S. | NIT: 900.342.297-2 | © 2022 TODOS LOS DERECHOS RESERVADOS \n\nSUPERINTENDENCIA DE INDUSTRIA Y COMERCIO | PayU",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1",
+      "blockClass": "terminos"
+    }
+  },
+  "flex-layout.row#footer1":{
+    "props": {
+      "blockClass": "row1-footer"
+    },
+    "children": ["flex-layout.col#logo-desktop1"]
+  },
+  "flex-layout.col#logo-desktop1": {
+    "props": {
+      "blockClass": "col1-footer",
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "width": "100%"
+    },
+    "children": ["logo#desktop1"]
+  },
+  "logo#desktop1": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://arturocalle.vteximg.com.br/arquivos/logoAC-W.png",
+      "width": "190",
+      "blockClass": "logoFooter"
+    }
+  },
+
+// Columnas de contenido
+
   "flex-layout.row#footer-1-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-clothing",
-      "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
-      "footer-spacer",
-      "social-networks"
+      "flex-layout.col#PrimeraCol1",
+      "flex-layout.col#PrimeraCol2",
+      "flex-layout.col#PrimeraCol3",
+      "flex-layout.col#PrimeraCol4",
+      "flex-layout.col#PrimeraCol5"
     ],
     "props": {
-      "blockClass": "menu-row",
+      "blockClass": "menu-rowC",
       "paddingTop": 6,
       "paddingBottom": 3
     }
   },
+
+// Columnas de cierre
 
   "social-networks": {
     "props": {
@@ -105,7 +143,7 @@
       "paddingTop": 4,
       "paddingBottom": 4
     },
-    "children": ["vtex.menu@2.x:menu#footer-mobile"]
+    "children": []
   },
   "rich-text#footer-mobile": {
     "props": {

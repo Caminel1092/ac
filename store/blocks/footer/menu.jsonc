@@ -1,0 +1,55 @@
+{
+// Contenido Columnas
+  "flex-layout.col#PrimeraCol1": {
+    "children": [
+      "disclosure-layout#simple"
+    ]
+  },
+  "flex-layout.col#PrimeraCol2":{
+    "children": [
+      "disclosure-layout#simple"
+    ]
+  },
+  "flex-layout.col#PrimeraCol3":{
+    "children": [
+      "disclosure-layout#simple"
+    ]
+  },
+  "flex-layout.col#PrimeraCol4":{
+    "children": [
+      "disclosure-layout#simple"
+    ]
+  },
+  "flex-layout.col#PrimeraCol5":{
+    "children": [
+      "disclosure-layout#simple"
+    ]
+  },
+ // Cierre contenido 
+ //Comienzo de contenido columna 1
+
+  "disclosure-layout#simple":{
+    "children": ["disclosure-trigger#simple", "disclosure-content#simple"]
+  },
+  "disclosure-trigger#simple": {
+    "children": ["rich-text#tileFCol"]
+  },
+  "disclosure-content#simple": {
+    "children": ["rich-text#answer", "rich-text#answer", "rich-text#answer", "rich-text#answer", "rich-text#answer", "rich-text#answer", "rich-text#answer"]
+  },
+  "rich-text#tileFCol": {
+    "props": {
+      "blockClass": "TituloCont",
+      "text": "Acerca de nosotros"
+    }
+  },
+  "rich-text#answer": {
+    "props": {
+      "blockClass": "ContenidoDesplegable",
+      "text": "[Franquicias](https://www.arturocalle.com/contenido/franquicias)"
+    }
+  }
+
+
+
+}

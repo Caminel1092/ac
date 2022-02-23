@@ -8,9 +8,10 @@
   "header-layout.desktop": {
     "children": [
       "flex-layout.row#1-desktop",
-      "flex-layout.row#2-desktop",
+      //"flex-layout.row#2-desktop",
       "flex-layout.row#3-desktop",
       "sticky-layout#4-desktop"
+      //"sticky-layout#5-desktop"
     ]
   },
 
@@ -25,6 +26,12 @@
     "children": ["notification.bar#home"],
     "props": {
       "fullWidth": "true"
+    }
+  },
+  "search-bar": {
+    "props": {
+      "blockClass": "clear-button",
+      "placeholder": "¿QUÉ BUSCAS?"
     }
   },
   "notification.bar#home": {
@@ -55,7 +62,7 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#4-desktop"]
+    "children": ["flex-layout.row#4-desktop","flex-layout.row#5-desktop"]
   },
   "flex-layout.row#4-desktop": {
     "props": {
@@ -68,19 +75,105 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#category-menu",
       "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
-      "login",
+      //"locale-switcher",
+      //"login",
       "minicart.v2"
+    ]
+  },
+  "flex-layout.col#4-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "left",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.row#row-logo"
+      //"flex-layout.row#menu"
+    ]
+  },
+  "flex-layout.row#row-logo": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "left",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#search"
+    ]
+  },
+  "flex-layout.col#search": {
+    "props": {
+      "horizontalAlign": "right",
+      "verticalAlign": "middle"
+    },
+    "children": ["flex-layout.row#menu-search"]
+  },
+  "flex-layout.row#menu-search": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "right",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "search-bar",
+      //"locale-switcher",
+      //"login",
+      "minicart.v2"
+    ]
+  },
+  "flex-layout.row#menu": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#category-menu",
+      "flex-layout.col#spacer"
     ]
   },
   "flex-layout.col#logo-desktop": {
     "props": {
+      "horizontalAlign": "left",
       "verticalAlign": "middle"
     },
     "children": ["logo#desktop"]
+  },
+
+  "sticky-layout#5-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#5-desktop"]
+  },
+  "flex-layout.row#5-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#category-menu",
+      "flex-layout.col#spacer"
+    ]
   },
   "flex-layout.col#category-menu": {
     "props": {
@@ -92,8 +185,8 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180"
+      "url": "https://arturocalle.vteximg.com.br/arquivos/logoArturoCalle.png",
+      "width": "290"
     }
   },
   "header-layout.mobile": {
@@ -107,7 +200,7 @@
       "drawer",
       "logo#mobile",
       "flex-layout.col#spacer",
-      "login",
+      //"login",
       "minicart.v2"
     ],
     "props": {

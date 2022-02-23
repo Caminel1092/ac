@@ -67,6 +67,21 @@
   font-weight: 700;
 }
 
+.paragraph--termino{
+  font-size: 8px;
+}
+
+.wrapper--terminos{
+  font-size: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.link--terminos{
+  color: #fff;
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 640px) {
   .container--question .strong {
     font-size: 40px;
@@ -87,4 +102,129 @@
   .container--title .paragraph {
     line-height: 1.3em;
   }
+
+  .wrapper--item-cat{
+    max-height: 38px;
+  }
+
+  .wrapper--item-cat-clean{
+    max-height: 38px;
+  }
+
+  .wrapper--item-cat-bold{
+    max-height: 38px;
+  }
+
+  .wrapper--item-cat-bold-warn{
+    max-height: 38px;
+  }
+
+  .paragraph--item-cat{
+    text-align:left;
+    width: 100%;
+  }
+
+  .paragraph--item-cat-clean{
+    text-align:left;
+    color:transparent;
+    width: 100%;
+  }
+
+  .paragraph--item-cat-bold{
+    font-weight:bold;
+    text-align:left;
+    width: 100%;
+  }
+
+  .paragraph--item-cat-bold-warn{
+    font-weight:bold;
+    color:red;
+    text-align:left;
+    width: 100%;
+  }
+}
+/*Home Styles*/
+.link--BotonI, .link--BotonD {
+  background: white;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 11px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.link--BotonI:hover, .link--BotonD:hover {
+  background: black;
+  color: white;
+}
+.container--BotonI {
+  position: absolute;
+  left: 15%;
+  bottom: 10%;
+}
+
+.container--BotonD {
+  position: absolute;
+  right: 15%;
+  bottom: 10%;
+}
+
+.paragraph--titlem {font-weight: 800;font-size: 38px;}
+
+.link--BotonM {
+  position: absolute;
+  bottom: 21%;
+  transition: 1s;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 200px;
+  text-align: center;
+  background: white;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 5px 0;
+}
+
+.link--BotonM:hover {
+  background: black;
+  color: white;
+  border: 1px solid white;
+}
+
+/*Footer Styles*/
+.wrapper--TituloCont {
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.wrapper--ContenidoDesplegable .paragraph {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+
+.container--ContenidoDesplegable {
+  justify-content: center;
+}
+
+.wrapper--ContenidoDesplegable .link {
+  color: white;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.paragraph--terminos {
+  color: #dcdad7;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 1px;
+  line-height: 14px;
 }
