@@ -139,8 +139,11 @@
 
 /*Borde del header*/
 .flexRow--menu-link {
-  border-bottom: 1px solid rgb(228, 224, 224);
-  height: 28%;
+  border-bottom: 1px solid #eaeaea;
+}
+.flexRowContent--menu-link {
+  height: 28px;
+  align-items: center;
 }
 
 /*Estilos home diagramación*/
@@ -170,3 +173,22 @@
 }
 
 
+/*Product*/
+.flexRow--breadproduct {
+  position: absolute;
+}
+
+.flexRow--breadproduct {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  width: 100%;
+  margin-top: 1.2rem;
+  z-index: 9;
+}
+.flexCol--lateralCol {
+  z-index: 10;
+}
+.flexCol--filtroContent {
+  width: 30%;
+  background: white;
+}

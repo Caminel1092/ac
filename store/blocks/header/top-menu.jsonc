@@ -30,7 +30,10 @@
       "image#icon-contactenos",
       "menu-item#vtex-website4",
       "menu-item#vtex-website5"
-    ]
+    ],
+    "props":{
+      "blockClass": "menupre"
+    }
   },
 
   "image#icon-wpp": {
@@ -50,6 +53,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass": "texpre",
       "itemProps": {
         "icon":"mpa-globe",
         "type": "external",
@@ -75,6 +79,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass": "texpre",
       "itemProps": {
         "type": "external",
         "href": "https://web.whatsapp.com/",
@@ -98,6 +103,7 @@
       "icon": "mpa-heart",
       "id": "menu-item-vtex-website",
       "type": "custom",
+      "blockClass": "texpre",
       "iconId": null,
       "highlight": false,
       "itemProps": {
@@ -122,6 +128,7 @@
     "props": {
       "id": "menu-item-vtex-website",
       "type": "custom",
+      "blockClass": "texpre",
       "iconId": null,
       "highlight": false,
       "itemProps": {
@@ -137,6 +144,7 @@
     "props": {
       "id": "menu-item-vtex-website",
       "type": "custom",
+      "blockClass": "texpre",
       "iconId": null,
       "highlight": false,
       "itemProps": {
